@@ -1,4 +1,11 @@
-.errors {
+.errors,
+.error-red {
   color: red;
   font-size: 11px;
+}
+
+.form-ctn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
