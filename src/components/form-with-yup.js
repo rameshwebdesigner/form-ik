@@ -27,7 +27,7 @@ const FormWithYup = () => {
           phoneNumber: yup.string().matches(/^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/, 'Phone number is not valid').required(),
           password: yup.string().required('Please Enter your password')
                .matches(
-                    /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/,
+                    /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?=.{8,})/,
                     "Must Contain 8 Characters, One Uppercase, One Lowercase, One Number and One Special Case Character"
                ),
           confirmPassword: yup.string()
